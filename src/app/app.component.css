@@ -1,0 +1,16 @@
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+.jumbotron{
+    padding-top: 5px;
+    background: #fff;
+}
+
+.form-control,.input-group-text{
+    border: 1px solid #0080ff
+}
+
+.table.table-hover tbody{
+    cursor: pointer;
+    overflow-y: auto
+}
+

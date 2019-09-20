@@ -1,0 +1,19 @@
+<h4 class="display-text">Order Summary</h4>
+    <table class="table table-fixed table-sm">
+        <thead class="thead-light">
+            <th>Order Num</th>
+            <th>Customer</th>
+            <th>Payment method</th>
+            <th>Grand Total</th>
+                    <button type="button" class="btn btn-outline-dark ml-1"  routerLink="/order">
+                        <i class="fa fa-arrow-left"></i>Back</button>
+        </thead>
+        <tbody>
+            <tr *ngFor="let order of ordersList">
+                <td>{{order.OrderNum}}</td>
+                <td>{{order.CustomerName}}</td>
+                <td>{{order.PaymentMethod |uppercase}}</td>
+                <td>{{order.GrandTotal}}.00</td>
+            </tr>
+        </tbody>
+    </table>
